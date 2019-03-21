@@ -1,0 +1,40 @@
+.parent {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.header, .container, .footer,
+.container .sidebar,
+.container .content,
+.container .ads {
+    border: 2px solid #CCC;
+    margin-bottom: 20px;
+    padding: 10px
+}
+
+.parent .container {
+    display: flex;
+    text-align: center
+}
+
+.parent .container .content {
+    flex-grow: 1;
+    margin: 20px;
+    background-color: #EEE
+}
+
+.parent .container .sidebar,
+.parent .container .ads {
+    width: 100px;
+    height: 65vh;
+    margin: 20px;
+    background-color: #EEE
+}
+
+@media (max-width: 600px) {
+    
+    .container .sidebar {
+        display: none
+    }
+}
