@@ -15,5 +15,19 @@ ul.breadcrumb li:first-child::before {
     content: ""
 }
 
+@media screen and (min-width: 600px) {
+    
+    ul.breadcrumb li {
+        display: inline
+    }
 
+    ul.breadcrumb li::before {
+        content: " > "
+    }
+
+    ul.breadcrumb li:first-child::before {
+        content: ""
+    }
+
+}
 
