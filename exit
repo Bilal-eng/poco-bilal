@@ -1,0 +1,47 @@
+[33mcommit acc1087bfaba21b4c79cfe84e3807294781a1e90[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Bilal Sheikh Khalil <bilalsheikhkhalil@gmail.com>
+Date:   Fri Mar 15 11:13:55 2019 +0300
+
+    Renamed shell.html to bash.html
+
+ cheatsheet/shell.html | 31 [31m-------------------------------[m
+ 1 file changed, 31 deletions(-)
+
+[33mcommit 9d6173f125278dd6b8ef98bfb93fa9566266bd60[m
+Author: Bilal Sheikh Khalil <bilalsheikhkhalil@gmail.com>
+Date:   Fri Mar 15 10:23:41 2019 +0300
+
+    Rename shell.html to bash.html
+
+ cheatsheet/bash.html | 31 [32m+++++++++++++++++++++++++++++++[m
+ 1 file changed, 31 insertions(+)
+
+[33mcommit b29260bbf2d370774b19666e6c3f70c3bde67520[m
+Author: Bilal Sheikh Khalil <bilalsheikhkhalil@gmail.com>
+Date:   Thu Mar 14 16:16:09 2019 +0300
+
+    Add cheatsheet files
+
+ cheatsheet/git.html   | 20 [32m++++++++++++++++++++[m
+ cheatsheet/html.html  | 47 [32m+++++++++++++++++++++++++++++++++++++++++++++++[m
+ cheatsheet/index.html | 13 [32m+++++++++++++[m
+ cheatsheet/shell.html | 31 [32m+++++++++++++++++++++++++++++++[m
+ 4 files changed, 111 insertions(+)
+
+[33mcommit a482e30f4ff9b0bc1ac75c06303488e4565e8a4d[m
+Author: Bilal Sheikh Khalil <bilalsheikhkhalil@gmail.com>
+Date:   Thu Mar 14 14:56:59 2019 +0300
+
+    last update
+
+ scratch/index.html | 3 [32m++[m[31m-[m
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+[33mcommit 4939e433ff44fcfca6f1d5e62442ba3d48e1eeef[m
+Author: Bilal Sheikh Khalil <bilal.sheikh.khalil>
+Date:   Thu Mar 14 11:59:33 2019 +0300
+
+    Save first version of file
+
+ scratch/index.html | 11 [32m+++++++++++[m
+ 1 file changed, 11 insertions(+)

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>JavaScript Test</title>
+        <style>
+            .red {
+                color: red
+            }
+
+            .font {
+                font-style: italic;
+                font-size: 30px;
+                font-family: Arial, Tahoma;
+                color: #00F;
+                font-weight: bold
+            }
+        </style>
+    </head>
+    <body>
+        <div class="red" id="main">This Is Div</div>
+        <button onclick="changeClass()">Change Class</button>
+        <button onclick="addElement()">Add Element</button>
+        <button onclick="addArray(['Hello', 'Powercoders', 'Folks'])">
+            Add Array
+        </button>
+        <script>
+
+            // This Function To Change The Name Of The Class And Add Style to it
+            
+            let el = document.getElementById('main');
+
+            function changeClass() {
+
+                el.className = 'font'
+            }
+
+            // This Function To Add A New Element Dynamically
+
+            function addElement() {
+
+                let newElement = document.createElement("p");
+
+                newElement.innerHTML = "This Is Paragraph";
+
+                el.appendChild(newElement)
+
+
+            }
+
+            // This Function To Add A New Array Dynamically
+
+            function addArray() {
+                el.innerHTML = generateItems(['Hello', 'Powercoders', 'Folks'])
+            }
+
+            function generateItems(arr) {
+                let template = '';
+                for(let i = 0; i < arr.length; i++) {
+                    template += `
+                    <div class="item">
+                        ${i + 1} - ${arr[i]}
+                        </div>
+                    `
+                }
+                return template
+            }
+        </script>
+    </body>
+</html>
