@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, Tahoma;
+    margin: 0
+}
+
+ul {
+    padding: 0;
+    margin: 0
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    font-size: 18px;
+    background: #EEE;
+    transition: .2s linear all
+}
+
+ul li:nth-child(odd) {
+    background: #f9f9f9
+}
+
+ul li:hover {
+    background: #DDD
+}
+
+ul li.checked {
+    background: #888;
+    color: #FFF;
+    text-decoration: line-through
+}
+
+ul li.checked::before {
+    content: "";
+    position: absolute;
+    border-color: #FFF;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    height: 15px;
+    width: 7px;
+    transform: rotate(45deg)
+}
+
+.header {
+    background: red;
+    padding: 30px 40px;
+    color: #FFF;
+    text-align: center
+}
+
+.group {
+    display: flex
+}
+
+input {
+    flex: 1;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    padding: 10px;
+    font-size: 16px
+}
+
+#addBtn {
+    padding: 10px;
+    width: 60px;
+    background: #d9d9d9;
+    color: #555;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s
+}
+
+#addBtn:hover {
+    background: #BBB
+}
+
+.remove {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px 16px
+}
+
+.remove:hover {
+    background-color: #F00;
+    color: #FFF
+}
