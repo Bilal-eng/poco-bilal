@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Javascript strings, arrays and objects</title>
+    </head>
+    <body>
+
+        <script>
+            var fruits = ['Apple', 'Banana', 'Apricot', 'Strawberry', 'Grape'];
+
+            // Print an Array By Using Normal For Loop
+            console.log('Print an Array By Using Normal For Loop');
+            for(let i = 0; i < fruits.length; i++) {
+                console.log("[" + i + "] = " + fruits[i]);
+            }
+
+            // Print an Array By Using foreach Loop
+            console.log('Print an Array By Using foreach Loop');
+            fruits.forEach(function(element) {
+                console.log(element);
+            });
+
+            // Create A New Array Using Map Funtion
+            console.log('Create A New Array Using Map Funtion');
+            var mapOutput = fruits.map(function(value){
+                return value + ' fruit';
+            });
+            console.log(mapOutput);
+            console.log("The Main Array\n" + fruits);
+            console.log("The Sliced Array\n" + fruits.slice(1, 4));
+            console.log("The Reversed Array\n" + fruits.reverse());
+            console.log("The Spliced Array\n" + fruits.splice(1, 3));
+            console.log("The Shifted Array\n" + fruits.shift());
+
+            let stringArr = 'Hello Powercoders Folks';
+
+            console.log(stringArr.indexOf('Folks'));
+            console.log(stringArr.search('Powercoders'));
+            console.log(stringArr.slice(6, 17));
+            console.log(stringArr.replace("Powercoders", "Re-Coded"));
+
+            let carObj = {
+                name: 'Audi',
+                color: 'Red',
+                model: '2009'
+            };
+
+            console.log('Output an Object Array')
+            for(let value in carObj) {
+                if(carObj.hasOwnProperty(value)) {
+                    console.log(value, "= " + carObj[value]);
+                }
+            }
+
+        </script>
+    </body>
+</html>
