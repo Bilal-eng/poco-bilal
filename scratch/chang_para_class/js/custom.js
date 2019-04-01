@@ -1,16 +1,16 @@
 // let listElement = document.getElementsByTagName('li'),
-//     paragraphRef = document.getElementById('mypara');
+//     el = document.getElementById('mypara');
 
 // listElement[0].addEventListener('click', function(){
-//     paragraphRef.className = 'warning';
+//     el.className = 'warning';
 // });
 
 // listElement[1].addEventListener('click', function(){
-//     paragraphRef.className = 'tip';
+//     el.className = 'tip';
 // });
 
 // listElement[2].addEventListener('click', function(){
-//     paragraphRef.className = '';
+//     el.className = '';
 // });
 
 // console.log('My code is running');
