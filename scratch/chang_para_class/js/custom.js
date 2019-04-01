@@ -29,17 +29,21 @@
 // }
 
 
+// let el = document.getElementById('mypara');
 
-let el = document.getElementById('mypara');
+// function setClassTip(event) {
+//     el.className = 'tip';
+// }
 
-function setClassTip(event) {
-    el.className = 'tip';
-}
+// function setClassWarning(event) {
+//     el.className = 'warning';
+// }
 
-function setClassWarning(event) {
-    el.className = 'warning';
-}
+// function setClear(event) {
+//     el.className = '';
+// }
 
-function setClear(event) {
-    el.className = '';
+function setClass(event, className) {
+    let el = document.getElementById('mypara');
+    el.className = className;
 }
