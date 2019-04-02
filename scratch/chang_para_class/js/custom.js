@@ -43,7 +43,31 @@
 //     el.className = '';
 // }
 
-function setClass(event, className) {
-    let el = document.getElementById('mypara');
-    el.className = className;
+// function setClass(event, className) {
+//     let el = document.getElementById('mypara');
+//     el.className = className;
+// }
+
+function setClass(className) {
+    let el = document.getElementById('mypara').className = className;
 }
+
+document.getElementById('make-warning').addEventListener('click', function(event){
+    setClass('warning');
+});
+
+document.getElementById('make-tip').addEventListener('click', function(event){
+    setClass('tip');
+});
+
+document.getElementById('make-normal').addEventListener('click', function(event){
+    setClass('');
+});
+
+// $(document).ready(function(){
+//     $('ul li').on('click', function(){
+//         $('li:first-child').addClass('warning');
+//         $('li:nth-of-type(2)').addClass('tip');
+//         $('li:last-child').addClass('');
+//     })
+// });
