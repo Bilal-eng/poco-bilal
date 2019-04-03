@@ -48,6 +48,11 @@
 //     el.className = className;
 // }
 
+
+
+// window.addEventListener('DOMContentLoaded', function(event) {
+// });
+
 function setClass(className) {
     let el = document.getElementById('mypara').className = className;
 }
@@ -63,6 +68,10 @@ document.getElementById('make-tip').addEventListener('click', function(event){
 document.getElementById('make-normal').addEventListener('click', function(event){
     setClass('');
 });
+
+
+
+
 
 // $(document).ready(function(){
 //     $('ul li').on('click', function(){
