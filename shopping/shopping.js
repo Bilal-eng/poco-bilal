@@ -34,7 +34,10 @@ function createNewListItem(itemName) {
 item.addEventListener('keyup', function(event){
 
     // console.log(event.keyCode);
-    if(event.keyCode === 13){
+    // if(event.keyCode === 13){
+    //     myBtn.click();
+    // }
+    if(event.key === 'Enter'){
         myBtn.click();
     }
 });
