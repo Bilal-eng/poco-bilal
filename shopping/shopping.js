@@ -1,13 +1,14 @@
 let item = document.getElementById('item'),
     myBtn = document.querySelector('button'),
     ulElement = document.querySelector('ul');
+item.focus();    
 myBtn.addEventListener('click', function(event){
     if(item.value !== ''){
         ulElement.appendChild(createNewListItem(item.value));
     } else {
         alert('Please write something');
     }
-    
+    item.focus();
     item.value = "";
 });
 function createNewListItem(itemName) {
