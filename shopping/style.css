@@ -1,0 +1,21 @@
+button {
+    border: none;
+    padding: 10px;
+    background-color: rgb(230, 0, 0);
+    color: #FFF;
+    border-radius: 10px;
+    outline: none
+    
+}
+
+div button { 
+    background-color: rgb(0, 230, 0);
+}
+
+input[type="text"] {
+    padding: 5px 10px
+}
+
+ul li {
+    margin-bottom: 5px 10px
+}

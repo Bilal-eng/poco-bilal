@@ -8,12 +8,15 @@
     <body>
         <h1>My shopping list</h1>
         <!-- Controls to append new items go here -->
-        <label for="item">Enter a new item:</label>
-        <input type="text" id="item" placeholder="Try somthing to buy">
-
+        <div>
+            <label for="item">Enter a new item:</label>
+            <input type="text" id="item" placeholder="Try somthing to buy">
+            <button>Add item</button>
+        </div>
         <!-- This is the shopping list -->
         <ul>
             <!-- List items will be added and removed here:-) -->
+            <li><span>Eggs</span> <button>Delete</button></li>
         </ul>
         <script src="shopping.js"></script>
     </body>
