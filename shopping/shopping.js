@@ -3,8 +3,8 @@ let item = document.getElementById('item'),
     ulElement = document.querySelector('ul');
 item.focus();    
 myBtn.addEventListener('click', function(event){
-    if(item.value !== ''){
-        ulElement.appendChild(createNewListItem(item.value));
+    if(item.value.trim() !== ''){
+        ulElement.appendChild(createNewListItem(item.value.trim()));
     } else {
         alert('Please write something');
     }
