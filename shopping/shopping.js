@@ -1,18 +1,26 @@
-let item = document.getElementById('item'),
+const item = document.getElementById('item'),
     myBtn = document.querySelector('button'),
     ulElement = document.querySelector('ul');
 item.focus();    
-myBtn.addEventListener('click', function(event){
-    if(item.value.trim() !== ''){
-        ulElement.appendChild(createNewListItem(item.value.trim()));
-    } else {
-        alert('Please write something');
-    }
+document.querySelector('button').addEventListener('click', function(event){
+    const trimmedValue = item.value.trim();
+    if(trimmedValue === ''){
+        return;
+    } 
+    ulElement.appendChild(createNewListItem(trimmedValue));
+    item.value = '';
+    myBtn.disabled = true;
     item.focus();
-    item.value = "";
 });
+
+/**
+ * Create and returns an 'li' element for inclusion in the shopping list.
+ * 
+ * @param {string} itemName Name of the item to add to the list
+ * @returns {HTMLElement} li element
+ */
 function createNewListItem(itemName) {
-    let li = document.createElement('li'),
+    const li = document.createElement('li'),
         span = document.createElement('span');
         button = document.createElement('button'),
         space = document.createTextNode(' ');
@@ -31,13 +39,30 @@ function createNewListItem(itemName) {
     return li;
 }
 
-item.addEventListener('keyup', function(event){
+// item.addEventListener('keyup', function(event){
+//     if(event.key === 'Enter'){
+//         document.querySelector('button').click();
+//     }
+// });
 
-    // console.log(event.keyCode);
-    // if(event.keyCode === 13){
-    //     myBtn.click();
+item.addEventListener('keyup', function(event){
+    // if(event.key === 'Enter'){
+    //     document.querySelector('button').click();
     // }
-    if(event.key === 'Enter'){
-        myBtn.click();
+    const trimmedValue = item.value.trim();
+    myBtn.disabled = trimmedValue === '';
+
+    if(trimmedValue === '') {
+        return;
     }
+
+    if(event.key !== 'Enter') {
+        return;
+    }
+
+    ulElement.appendChild(createNewListItem(trimmedValue));
+    item.value = '';
+    myBtn.disabled = true;
 });
+
+

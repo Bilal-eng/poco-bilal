@@ -1,19 +1,30 @@
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+h1 {
+    background: #DDD;
+    margin-top: 0;
+    padding: 10px;
+    border-radius: 5px
+}
+
 button {
     border: none;
     padding: 10px;
-    background-color: rgb(230, 0, 0);
-    color: #FFF;
     border-radius: 10px;
-    outline: none
-    
-}
-
-div button { 
-    background-color: rgb(0, 230, 0);
+    outline: none;
+    background-color: #080;
+    color: #FFF
 }
 
 input[type="text"] {
     padding: 5px 10px
+}
+
+button:disabled {
+    background-color: #F00;
+    color: #FFF
 }
 
 ul li {
